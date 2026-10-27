@@ -1,0 +1,139 @@
+:root{--ink:#19334c;--accent:#539ca6;--muted:#647581;--line:#dfe8eb}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#303f4b;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:16px;line-height:1.95}a{color:#28657d;text-underline-offset:5px;overflow-wrap:anywhere}a:hover{color:#0b3d50}a:focus-visible{outline:3px solid #539ca6;outline-offset:5px}.wrap{width:min(1120px,90%);margin:auto}header{padding:24px 4%;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:25px;background:#fff}.brand{flex-shrink:0}.brand a{font-size:19px;font-weight:750;color:var(--ink);text-decoration:none}.brand span{display:block;font-size:10px;line-height:1.6;letter-spacing:.06em;color:var(--muted)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font-size:12px;font-weight:650;text-decoration:none;color:#394951;padding:8px 0}nav a[aria-current]{border-bottom:2px solid var(--accent)}.hero{padding:70px 0 58px;background:linear-gradient(110deg,#fff 20%,#f0f7f8);border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:750;letter-spacing:.16em;color:#47788e;margin:0 0 18px}h1{font-size:clamp(30px,4vw,52px);letter-spacing:.02em;line-height:1.4;color:var(--ink);margin:0 0 24px}.lead{font-size:18px;color:#526470;margin:0}.quick{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.quick a{border:1px solid #c5dadd;background:white;padding:12px 22px;text-decoration:none;font-size:14px;font-weight:600;border-radius:4px}.body{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:60px;padding-top:56px;padding-bottom:80px}article{min-width:0}article h2{font-size:25px;line-height:1.6;color:var(--ink);border-left:4px solid var(--accent);padding-left:18px;margin:40px 0 24px}article h2:first-child{margin-top:0}article h3{font-size:20px;color:var(--ink);margin:30px 0 16px;border-bottom:1px solid var(--line);padding-bottom:12px}article p{margin:16px 0}article div:empty,article p:empty{display:none}article br+br{display:none}article table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.8}article td,article th{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top;overflow-wrap:anywhere}article th{background:#f0f6f7;font-weight:650}article iframe{width:100%;max-width:100%;height:350px;border:0}article hr{border:0;border-top:1px solid var(--line);margin:32px 0}article dt{font-weight:700;color:var(--ink);margin-top:25px}article dd{margin:10px 0 20px}aside{border-left:1px solid var(--line);padding-left:28px}aside h2{font-size:20px;margin:0 0 22px}aside>a{display:block;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px;text-decoration:none}.aside-note{background:#f1f6f7;margin-top:35px;padding:22px;font-size:13px;color:var(--muted)}footer{background:var(--ink);color:#fff;padding:48px 0}footer a{color:#c7e6e8}footer p{font-size:12px;color:#b5c9d4}.copyright{margin-top:32px}.skip{position:absolute;top:-100px}.skip:focus{top:8px;background:white;z-index:5;padding:10px}.table-scroll{overflow-x:auto;margin:24px 0}@media(max-width:900px){header{display:block}nav{margin-top:20px;gap:8px 20px}.body{grid-template-columns:1fr;gap:40px}aside{border-left:0;border-top:1px solid var(--line);padding:25px 0}.hero{padding:42px 0}.quick{display:grid}.body{padding-top:32px}article table{min-width:520px}article{overflow-wrap:anywhere}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Homepage integration */
+.body{display:block;max-width:1120px}.body>article{width:100%}#news,#about{scroll-margin-top:24px;margin:40px 0 64px}.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.news-card{border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:8px;background:#fff;padding:26px;box-shadow:0 5px 20px #19334c06}.news-card h3{margin:0 0 14px;border:0;padding:0;font-size:15px;color:#47788e}.news-card h3 br{display:none}.news-card p{font-size:14px;line-height:1.9;margin:0 0 12px}.news-archive{margin-top:24px}.news-archive summary{cursor:pointer;padding:16px 22px;border:1px solid var(--line);background:#f4f8f9;border-radius:5px;color:var(--ink)}.news-archive[open] .news-grid{margin-top:20px}#about{border-top:1px solid var(--line);padding-top:48px}#about p{max-width:960px}@media(max-width:650px){.news-grid{grid-template-columns:1fr}.news-card{padding:20px}}
+
+.site-intro{max-width:900px;border-left:4px solid var(--accent);background:#fff;padding:20px 26px;margin-top:28px;color:#435663;font-size:16px}.site-intro p{margin:0}.site-intro p+p{margin-top:12px}.site-intro a{font-weight:600}@media(max-width:650px){.site-intro{padding:18px;font-size:15px}}
+
+.training-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}.training-card{border:1px solid var(--line);padding:20px;border-radius:8px}.training-card h3{margin-top:0}.training-card table{min-width:0;font-size:13px}.training-card td{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.training-contact{background:#f1f7f8;padding:24px;margin-top:40px}.data-note{font-size:13px;color:var(--muted)}.patient-notes{margin:40px 0;border:1px solid var(--line);border-radius:8px}.patient-notes summary{cursor:pointer;padding:22px;font-weight:650;color:var(--ink);background:#f0f6f7}.patient-notes-body{padding:24px}.patient-notes-body h3{font-size:18px}@media(max-width:850px){.training-grid{grid-template-columns:1fr}}
+
+/* Compact spacing across the site */
+body{line-height:1.85}header{padding-top:16px;padding-bottom:16px}.hero{padding:40px 0 32px}h1{margin-bottom:18px}.eyebrow{margin-bottom:12px}.site-intro{margin-top:18px;padding:16px 22px}.body{padding-top:28px;padding-bottom:48px}article h2{margin:28px 0 18px}article h3{margin:22px 0 12px;padding-bottom:9px}article p{margin:12px 0}article td,article th{padding:9px 12px}.table-scroll{margin:18px 0}#news,#about{margin:24px 0 36px}#news:first-child{margin-top:0}#about{padding-top:28px}.news-grid{gap:16px}.news-card{padding:20px}.news-card p{line-height:1.8;margin-bottom:8px}.news-archive{margin-top:18px}.news-archive summary{padding:12px 18px}.training-grid{gap:16px}.training-contact{margin-top:28px;padding:20px}.patient-notes{margin:28px 0}.patient-notes summary{padding:18px}.patient-notes-body{padding:20px}footer{padding:32px 0}.copyright{margin-top:22px}@media(max-width:650px){.hero{padding:28px 0 24px}.body{padding-top:24px;padding-bottom:32px}nav{margin-top:12px}.news-card{padding:18px}.site-intro{padding:16px}#about{padding-top:24px}}
+
+#about:first-child{margin-top:0;padding-top:0;border-top:0}#research{margin:32px 0}#research>h2{font-size:30px;line-height:1.5}
+
+/* Separate activity and academic reports */
+.report-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}.report-group>h3{margin:0 0 8px;padding:12px 16px;border:0;border-radius:6px}.activity>h3{background:#e6f2e9;color:#2d6043}.achievement>h3{background:#faf0c9;color:#71571b}.report-description{font-size:13px;color:var(--muted);margin:8px 0 16px}.report-list{display:grid;gap:14px}.news-card.activity-card{background:#f0f8f2;border-color:#cfe3d4;border-top-color:#73a482}.news-card.achievement-card{background:#fffbed;border-color:#eadfae;border-top-color:#c6aa4b}.activity-card h3{color:#376449}.achievement-card h3{color:#765e22}.activity .news-archive summary{background:#eaf4ed;border-color:#cfe3d4;color:#2d6043}.achievement .news-archive summary{background:#fff7d9;border-color:#eadfae;color:#71571b}.news-archive[open] .report-list{margin-top:14px}@media(max-width:700px){.report-columns{grid-template-columns:1fr;gap:28px}}
+
+#lab-links{margin:40px 0 28px}.lab-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.lab-links>a{display:flex;justify-content:space-between;gap:12px;padding:18px;background:#f1f7f8;border:1px solid var(--line);border-radius:7px;text-decoration:none;font-weight:650}.research-links{padding-left:22px}.research-links li{margin:10px 0}#research>h2{font-size:clamp(21px,2.5vw,28px)}.contact-section{display:grid;grid-template-columns:0.9fr 1.1fr;gap:32px;align-items:start;background:linear-gradient(135deg,#fbfdfe,#edf4f7);border-radius:10px;margin-top:44px;padding:30px}.contact-intro h2{border:0;padding:0;font-size:clamp(26px,3vw,36px);margin-top:0;line-height:1.4}.contact-intro h2 span{display:block;font-size:24px}.contact-english{color:var(--muted);font-size:14px}.contact-card{background:#fff;border:1px solid #d7e4ea;border-radius:10px;padding:26px;box-shadow:0 10px 28px #19334c08}.contact-card h3{margin-top:0;border:0;padding:0;font-size:22px}.contact-card h4{margin:18px 0 6px;font-size:15px;color:var(--ink)}.contact-card p{margin:8px 0}.contact-office{border-top:1px solid var(--line);margin-top:18px}.contact-hours,.contact-note{font-size:14px;color:var(--muted)}.contact-card a{white-space:nowrap}.contact-note{border-top:1px solid var(--line);padding-top:16px}@media(max-width:750px){.lab-links,.contact-section{grid-template-columns:1fr}.contact-section{padding:20px;gap:18px}.contact-card{padding:20px}}
+
+.home-hero{background:radial-gradient(ellipse at 96% 78%,#e1f1f5 0,transparent 40%),radial-gradient(ellipse at 12% 55%,#f7f5ef 0,transparent 45%),#fff;padding:48px 0 38px}.home-hero .eyebrow{font-size:12px;letter-spacing:.025em;color:#2474a4;margin-bottom:16px}.home-hero h1{font-size:clamp(30px,4.2vw,54px);font-weight:800;letter-spacing:-.035em;line-height:1.35;color:#193b5c;margin-bottom:22px}.hero-title-unit{display:inline-block}.hero-copy{max-width:860px}.hero-japanese{font-size:18px;line-height:1.85;margin:0 0 16px}.hero-english{font-size:17px;line-height:1.8;color:#637482;margin:0 0 24px}.hero-about{max-width:910px;margin-top:0;border-left:5px solid #3ba6b6;border-radius:8px;background:#ffffffed;box-shadow:0 8px 28px #19334c07;padding:20px 24px;font-size:15px}.hero-about h2{font-size:17px;line-height:1.5;color:#253949;margin:0 0 12px}.hero-about .about-english{color:#637482;font-size:14px}.hero-about p+p{margin-top:12px}@media(max-width:650px){.home-hero{padding:30px 0 28px}.home-hero h1{font-size:32px;letter-spacing:-.02em}.hero-japanese{font-size:16px}.hero-english{font-size:15px}.hero-about{padding:16px 18px;font-size:14px}.hero-about h2{font-size:16px}}
+
+/* Department identity and social links */
+.brand{display:flex;align-items:center;gap:12px}.brand-logo{display:block;flex-shrink:0;line-height:0}.brand-logo img{width:64px;height:64px;object-fit:contain;border-radius:50%}header nav{align-items:center}nav .instagram-top{padding:10px 16px;background:#226f9b;color:#fff;border-radius:6px;white-space:nowrap}nav .instagram-top:hover{background:#194e6c;color:white}.contact-social{margin-top:24px;padding:20px;background:#f4f8fa;border:1px solid #d7e4ea;border-radius:9px}.contact-social h3{border:0;margin:0;font-size:20px;color:var(--ink)}.contact-social p{font-size:13px;color:var(--muted);margin:4px 0 14px}.contact-social a{display:flex;justify-content:space-between;gap:12px;background:#226f9b;color:white;padding:11px 15px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:650;margin-top:10px}.contact-social a:hover{background:#194e6c}@media(max-width:650px){.brand-logo img{width:50px;height:50px}.brand a{font-size:16px}.brand span{font-size:9px}nav .instagram-top{padding:8px 12px}}
+
+.consultation-form{margin:22px 0}:is(.contact-card,.training-contact) .consultation-button{display:flex;align-items:center;justify-content:space-between;gap:12px;white-space:normal;background:#226f9b;color:white;padding:16px 18px;border-radius:7px;font-size:15px;font-weight:700;text-decoration:none;line-height:1.7}:is(.contact-card,.training-contact) .consultation-button:hover{background:#194e6c}.phone-guidance{font-size:14px;color:#435663}
+
+/* User-provided Instagram icon links */
+nav .instagram-top{display:inline-flex;align-items:center;justify-content:center;padding:2px;background:transparent;border-radius:12px;line-height:0;min-width:48px;min-height:48px}
+nav .instagram-top:hover{background:#edf4f8}
+.instagram-icon{display:block;width:44px;height:44px;object-fit:contain;flex-shrink:0;border-radius:9px}
+.contact-social a{align-items:center;background:white;color:var(--ink);border:1px solid #d7e4ea;padding:9px 12px}
+.contact-social a:hover{background:#eaf3f8;color:var(--ink);border-color:#226f9b}
+.contact-social .instagram-icon{width:36px;height:36px;border-radius:7px}
+.instagram-account{flex:1}
+.instagram-top:focus-visible,.contact-social a:focus-visible{outline:3px solid #226f9b;outline-offset:3px}
+@media(max-width:650px){nav .instagram-top{padding:2px}.contact-social a{gap:9px}}
+
+.lab-links>a{align-items:center}.lab-link-label{display:flex;align-items:center;gap:12px}.lab-link-icon{display:block;width:56px;height:56px;object-fit:contain;flex-shrink:0;border-radius:50%}
+
+.lab-link-diagram{border-radius:0}
+
+.consultation-icon{display:block;width:40px;height:48px;object-fit:contain;flex-shrink:0;border-radius:5px;background:white}.consultation-label{flex:1;min-width:0}
+
+/* Unified navy header and compact copyright footer */
+header{background:var(--ink);border-bottom-color:var(--ink)}
+header .brand a,header nav a{color:#fff}
+header .brand span{color:#c7d7e2}
+header nav a:hover{color:#c7e6e8}
+header nav a[aria-current]{border-bottom-color:#8bcbd2}
+header a:focus-visible{outline-color:#8bcbd2}
+header nav .instagram-top:hover{background:#ffffff18}
+:is(.contact-card,.training-contact) .consultation-button{background:#fff;color:#111;border:1px solid #cbd8df}
+:is(.contact-card,.training-contact) .consultation-button:hover{background:#f5f7f9;color:#111;border-color:var(--ink)}
+footer{padding:22px 0}footer .copyright{margin:0;text-align:center}
+
+/* Mobile navigation and touch-friendly contact controls */
+.brand>div,.contact-intro,.contact-card,.instagram-account,.lab-link-label{min-width:0}
+.consultation-button>span[aria-hidden],.contact-social a>span[aria-hidden]{flex-shrink:0}
+@media(max-width:650px){
+  header{padding:14px 5%}
+  .brand{gap:10px}
+  .brand a{line-height:1.5}
+  header nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px;align-items:stretch}
+  header nav a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:48px;padding:10px 8px;font-size:14px;line-height:1.5;text-align:center;border:1px solid #ffffff40;border-radius:6px}
+  header nav a[aria-current]{background:#ffffff14;border:1px solid #8bcbd2}
+  header nav .instagram-top{padding:2px;min-width:0;border-radius:6px}
+  .contact-section{padding:16px;gap:20px}
+  .contact-card{padding:16px}
+  .contact-social{padding:14px}
+  .contact-social a{font-size:15px;min-height:48px;line-height:1.6;padding:10px;gap:10px}
+  :is(.contact-card,.training-contact) .consultation-button{width:100%;min-height:64px;padding:12px;gap:10px;font-size:16px;line-height:1.6}
+  .consultation-icon{width:36px;height:44px}
+  .contact-card a[href^="tel:"]{display:inline-flex;align-items:center;min-height:44px;font-size:18px}
+  .lab-links>a{padding:14px;min-height:72px}
+}
+@media(max-width:360px){
+  .contact-section{padding:12px}
+  .contact-card{padding:12px}
+  :is(.contact-card,.training-contact) .consultation-button{padding:10px;gap:8px}
+}
+
+/* Independently scrollable report windows */
+.report-scroll-hint{font-size:12px;color:var(--muted);margin:0 0 10px}
+.report-scroll{height:560px;max-height:70vh;overflow-y:auto;overflow-x:hidden;align-content:start;padding:14px;border:1px solid var(--line);border-radius:8px;scrollbar-gutter:stable;-webkit-overflow-scrolling:touch}
+.activity .report-scroll{background:#eaf4ed;border-color:#cfe3d4}
+.achievement .report-scroll{background:#fff7d9;border-color:#eadfae}
+.report-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.report-scroll .news-card{min-width:0;overflow-wrap:anywhere}
+@media(max-width:700px){.report-scroll{height:440px;max-height:65vh;padding:10px}}
+
+/* Introduction portrait */
+.about-layout{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:30px;align-items:start}
+.about-text{min-width:0}
+.about-portrait{margin:12px 0 0}
+.about-portrait img{display:block;width:100%;height:auto;border-radius:8px}
+@media(max-width:700px){.about-layout{grid-template-columns:minmax(0,1fr);gap:18px}.about-portrait{grid-row:1;width:min(200px,65%);margin:0 auto}.about-text p:first-child{margin-top:0}}
+
+/* Publication reports: date and title, expandable citation and summary */
+.publication-notice{font-weight:650}
+.publication-details summary{cursor:pointer;color:var(--ink);font-weight:700;font-size:15px;line-height:1.7;overflow-wrap:anywhere;padding:8px 0}
+.publication-details summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.publication-body{padding-top:12px;border-top:1px solid #eadfae;margin-top:8px}
+.publication-body p{overflow-wrap:anywhere}
+
+.publication-title{font-size:15px;line-height:1.7;color:var(--ink);margin:10px 0;overflow-wrap:anywhere}
+
+/* Smaller portrait and regular-weight report text */
+.about-layout{grid-template-columns:minmax(0,1fr) 120px}
+#news h2,#news h3,#news h4,#news p,#news b,#news strong,#news summary,#news a{font-weight:400}
+@media(max-width:700px){.about-layout{grid-template-columns:minmax(0,1fr)}.about-portrait{width:min(100px,65%)}}
+
+/* Compact recruitment-page paragraphs and section spacing */
+#page-content p,#clinical-training p{margin:6px 0}
+#page-content h2,#clinical-training h2{margin:20px 0 10px}
+#page-content h2:first-child,#clinical-training h2:first-child{margin-top:0}
+#clinical-training{margin-top:20px}
+#page-content hr{margin:14px 0}
+#page-content .table-scroll{margin:10px 0}
+#clinical-training>section{margin-top:16px}
+#clinical-training .training-contact{margin-top:20px;padding:16px}
+
+#page-content .training-schedule{margin:12px 0 20px}#page-content .training-schedule dt{margin-top:12px}#page-content .training-schedule dd{margin:4px 0 12px}
+
+/* Year-by-year training schedule, wrapping within mobile width */
+#page-content .training-schedule-table{width:100%;min-width:0;table-layout:fixed;margin:12px 0 20px}
+.training-schedule-table caption{text-align:left;font-size:14px;color:var(--muted);margin-bottom:6px}
+.training-schedule-table th:first-child{width:24%}
+.training-schedule-table td,.training-schedule-table th{white-space:normal;overflow-wrap:anywhere}
+@media(max-width:650px){#page-content .training-schedule-table{font-size:14px}.training-schedule-table th:first-child{width:29%}#page-content .training-schedule-table td,#page-content .training-schedule-table th{padding:10px 8px}}
+
+/* Prominent header Instagram link */
+header nav .instagram-top{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:64px;padding:6px 16px 6px 8px;border:1px solid #ffffff55;border-radius:12px;background:#ffffff10;line-height:1.4;text-decoration:none}
+header nav .instagram-top .instagram-icon{width:52px;height:52px;border-radius:10px}
+header nav .instagram-top span{font-size:15px;font-weight:600;color:#fff}
+header nav .instagram-top:hover{background:#ffffff24;border-color:#ffffff99}
+header nav .instagram-top:focus-visible{outline:3px solid #8bcbd2;outline-offset:4px}
+@media(max-width:650px){header nav .instagram-top{gap:7px;padding:6px;min-height:60px}header nav .instagram-top .instagram-icon{width:44px;height:44px}header nav .instagram-top span{font-size:13px}}
+
+.department-banner{margin:0 0 24px}.department-banner img{display:block;width:100%;height:auto;border-radius:8px}.department-banner+#about{border-top:0;padding-top:0}@media(max-width:650px){.department-banner{margin-bottom:18px}}
