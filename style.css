@@ -147,3 +147,10 @@ header nav .instagram-top:focus-visible{outline:3px solid #8bcbd2;outline-offset
 .activity-photos{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:10px;align-items:start;margin-top:12px}.activity-photos img{display:block;width:100%;height:auto;border-radius:6px}@media(max-width:450px){.activity-photos{grid-template-columns:minmax(0,1fr)}.activity-photos img:last-child{width:70%;justify-self:center}}
 
 .activity-photo{margin:12px 0 0}.activity-photo img{display:block;width:100%;height:auto;border-radius:6px}
+
+/* Keep report photographs contained, including narrow screens */
+article img{max-width:100%}
+.news-card .activity-photo,.news-card .activity-photos{max-width:100%;min-width:0}
+.news-card .activity-photo img,.news-card .activity-photos img{width:auto;max-width:100%;height:auto;max-height:200px;object-fit:contain;margin-inline:auto}
+.news-card .activity-photos{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);align-items:center}
+@media(max-width:650px){.news-card .activity-photo img,.news-card .activity-photos img{max-height:160px}.news-card .activity-photos img:last-child{width:auto}}
