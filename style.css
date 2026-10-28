@@ -137,3 +137,13 @@ header nav .instagram-top:focus-visible{outline:3px solid #8bcbd2;outline-offset
 @media(max-width:650px){header nav .instagram-top{gap:7px;padding:6px;min-height:60px}header nav .instagram-top .instagram-icon{width:44px;height:44px}header nav .instagram-top span{font-size:13px}}
 
 .department-banner{margin:0 0 24px}.department-banner img{display:block;width:100%;height:auto;border-radius:8px}.department-banner+#about{border-top:0;padding-top:0}@media(max-width:650px){.department-banner{margin-bottom:18px}}
+
+/* History illustration beside the text */
+.history-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;align-items:start}
+.history-text{min-width:0}.history-illustration{margin:6px 0 0}
+.history-illustration img{display:block;width:100%;height:auto;border-radius:8px}
+@media(max-width:750px){.history-layout{grid-template-columns:minmax(0,1fr);gap:12px}.history-illustration{margin:0}}
+
+.activity-photos{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:10px;align-items:start;margin-top:12px}.activity-photos img{display:block;width:100%;height:auto;border-radius:6px}@media(max-width:450px){.activity-photos{grid-template-columns:minmax(0,1fr)}.activity-photos img:last-child{width:70%;justify-self:center}}
+
+.activity-photo{margin:12px 0 0}.activity-photo img{display:block;width:100%;height:auto;border-radius:6px}
