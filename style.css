@@ -154,3 +154,24 @@ article img{max-width:100%}
 .news-card .activity-photo img,.news-card .activity-photos img{width:auto;max-width:100%;height:auto;max-height:200px;object-fit:contain;margin-inline:auto}
 .news-card .activity-photos{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);align-items:center}
 @media(max-width:650px){.news-card .activity-photo img,.news-card .activity-photos img{max-height:160px}.news-card .activity-photos img:last-child{width:auto}}
+
+/* Faculty greetings: draft copy and future portraits */
+.greeting + .greeting{margin-top:24px;padding-top:4px;border-top:1px solid var(--line)}
+.greeting>h3{margin-top:18px}
+.greeting-draft{color:#637482;font-size:14px}
+.greeting-photo-placeholder{width:120px;aspect-ratio:496/684;display:flex;align-items:center;justify-content:center;border:1px dashed #bccbd5;border-radius:8px;background:#f4f7f9;color:#637482;font-size:12px;text-align:center}
+@media(max-width:700px){.greeting-photo-placeholder{width:100px}}
+
+/* Let history text wrap below the illustration on wider screens. */
+.history-layout{display:flow-root}
+.history-illustration{float:right;width:44%;margin:6px 0 16px 24px}
+@media(max-width:750px){.history-layout{display:flex;flex-direction:column;gap:12px}.history-text{order:0}.history-illustration{order:1;float:none;width:100%;margin:0}}
+
+/* Faculty groups and roles */
+.clinical-group{margin-bottom:36px;scroll-margin-top:24px}.greeting>h3{margin-bottom:4px;padding-bottom:4px;border-bottom:0}.greeting>.faculty-roles{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.8}.clinical-group>.greeting{margin-top:18px}header nav{justify-content:flex-end}@media(max-width:650px){header nav{justify-content:stretch}header nav .instagram-top{grid-column:1 / -1}.greeting>.faculty-roles{font-size:13px}}
+
+.report-columns.report-columns-single{grid-template-columns:minmax(0,1fr)}
+
+/* Compact activity notice board */
+.activity .report-scroll{height:280px;max-height:35vh}
+@media(max-width:700px){.activity .report-scroll{height:220px;max-height:32.5vh}}
