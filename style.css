@@ -175,3 +175,7 @@ article img{max-width:100%}
 /* Compact activity notice board */
 .activity .report-scroll{height:280px;max-height:35vh}
 @media(max-width:700px){.activity .report-scroll{height:220px;max-height:32.5vh}}
+
+.rotation-figure{margin:16px 0 24px}.rotation-figure img{display:block;width:100%;max-width:100%;height:auto}.rotation-figure a{display:block}
+
+.midcareer-intro{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:24px;align-items:center}.midcareer-portrait{margin:0}.midcareer-portrait img{display:block;width:100%;height:auto}@media(max-width:650px){.midcareer-intro{grid-template-columns:minmax(0,1fr) 100px;gap:12px}}
