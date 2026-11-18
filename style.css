@@ -189,8 +189,12 @@ article h2{font-weight:700}
 .midcareer-intro{grid-template-columns:minmax(0,1fr) 300px}@media(max-width:750px){.midcareer-intro{grid-template-columns:1fr}.midcareer-portrait{width:min(300px,80%);justify-self:end}}
 
 /* Compact blue publication reports */
-#achievements .report-scroll{background:#edf5fa;border-color:#cbdfe9;padding:12px;gap:10px}
-#achievements .achievement-card{background:#f8fbfe;border:1px solid #ccdfeb;border-top:3px solid #679bb6;padding:14px 18px;border-radius:7px}
-#achievements .achievement-card h3{color:#285b78;margin:0 0 6px;padding:0;border:0;font-size:16px;line-height:1.5}
-#achievements .achievement-card p{margin:0;line-height:1.7;font-size:14px;font-weight:400}
-@media(max-width:650px){#achievements .report-scroll{padding:9px}#achievements .achievement-card{padding:12px}}
+:is(#achievements,#collaborative-achievements) .report-scroll{background:#edf5fa;border-color:#cbdfe9;padding:12px;gap:10px}
+:is(#achievements,#collaborative-achievements) .achievement-card{background:#f8fbfe;border:1px solid #ccdfeb;border-top:3px solid #679bb6;padding:14px 18px;border-radius:7px}
+:is(#achievements,#collaborative-achievements) .achievement-card h3{color:#285b78;margin:0 0 6px;padding:0;border:0;font-size:16px;line-height:1.5}
+:is(#achievements,#collaborative-achievements) .achievement-card p{margin:0;line-height:1.7;font-size:14px;font-weight:400}
+@media(max-width:650px){:is(#achievements,#collaborative-achievements) .report-scroll{padding:9px}:is(#achievements,#collaborative-achievements) .achievement-card{padding:12px}}
+
+:is(#achievements,#collaborative-achievements) .report-scroll{height:300px;max-height:none}
+
+#collaborative-achievements{margin-top:36px}
