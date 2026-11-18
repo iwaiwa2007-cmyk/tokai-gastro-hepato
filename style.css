@@ -106,7 +106,7 @@ footer{padding:22px 0}footer .copyright{margin:0;text-align:center}
 
 /* Smaller portrait and regular-weight report text */
 .about-layout{grid-template-columns:minmax(0,1fr) 120px}
-#news h2,#news h3,#news h4,#news p,#news b,#news strong,#news summary,#news a{font-weight:400}
+#news h3,#news h4,#news p,#news b,#news strong,#news summary,#news a{font-weight:400}
 @media(max-width:700px){.about-layout{grid-template-columns:minmax(0,1fr)}.about-portrait{width:min(100px,65%)}}
 
 /* Compact recruitment-page paragraphs and section spacing */
@@ -182,3 +182,8 @@ article img{max-width:100%}
 
 /* Official Instagram post embeds */
 .instagram-post-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}.instagram-post{min-width:0;overflow:hidden}.instagram-post .instagram-media{width:100%!important;min-width:0!important;max-width:540px!important;margin:0!important;box-sizing:border-box}.instagram-more{text-align:right}@media(max-width:1100px){.instagram-post-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:740px){.instagram-post-grid{grid-template-columns:minmax(0,1fr)}.instagram-post{width:100%;max-width:540px;margin-inline:auto}}
+
+/* Consistent section heading weight */
+article h2{font-weight:700}
+
+.midcareer-intro{grid-template-columns:minmax(0,1fr) 300px}@media(max-width:750px){.midcareer-intro{grid-template-columns:1fr}.midcareer-portrait{width:min(300px,80%);justify-self:end}}
